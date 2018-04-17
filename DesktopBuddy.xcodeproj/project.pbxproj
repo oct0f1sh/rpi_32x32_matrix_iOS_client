@@ -7,14 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		933EDCBB0C0605337FB66FBF /* Pods_DesktopBuddy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEFA6D297F0145E552E3AB65 /* Pods_DesktopBuddy.framework */; };
+		AE062EBD2081457C0047D001 /* awsiot-identity.p12 in Resources */ = {isa = PBXBuildFile; fileRef = AEDFC0712081204A00BAF4B3 /* awsiot-identity.p12 */; };
+		AE062EBF208153620047D001 /* AlertViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE062EBE208153620047D001 /* AlertViewHelper.swift */; };
+		AE062EC1208521E40047D001 /* IoTManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE062EC0208521E40047D001 /* IoTManager.swift */; };
 		AEC2A3A2208111D5009F8F89 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC2A3A1208111D5009F8F89 /* AppDelegate.swift */; };
 		AEC2A3A4208111D5009F8F89 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC2A3A3208111D5009F8F89 /* ViewController.swift */; };
 		AEC2A3A7208111D5009F8F89 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEC2A3A5208111D5009F8F89 /* Main.storyboard */; };
 		AEC2A3A9208111D5009F8F89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEC2A3A8208111D5009F8F89 /* Assets.xcassets */; };
 		AEC2A3AC208111D5009F8F89 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEC2A3AA208111D5009F8F89 /* LaunchScreen.storyboard */; };
+		AEDFC07020811B6600BAF4B3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDFC06F20811B6600BAF4B3 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4E258DE9101B447F9195A00B /* Pods-DesktopBuddy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesktopBuddy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DesktopBuddy/Pods-DesktopBuddy.debug.xcconfig"; sourceTree = "<group>"; };
+		AE062EBE208153620047D001 /* AlertViewHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewHelper.swift; sourceTree = "<group>"; };
+		AE062EC0208521E40047D001 /* IoTManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IoTManager.swift; sourceTree = "<group>"; };
 		AEC2A39E208111D5009F8F89 /* DesktopBuddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesktopBuddy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEC2A3A1208111D5009F8F89 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AEC2A3A3208111D5009F8F89 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +30,10 @@
 		AEC2A3A8208111D5009F8F89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AEC2A3AB208111D5009F8F89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AEC2A3AD208111D5009F8F89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AEDFC06F20811B6600BAF4B3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		AEDFC0712081204A00BAF4B3 /* awsiot-identity.p12 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "awsiot-identity.p12"; sourceTree = "<group>"; };
+		C2B68AB2F9C6D1D26EBD561C /* Pods-DesktopBuddy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesktopBuddy.release.xcconfig"; path = "Pods/Target Support Files/Pods-DesktopBuddy/Pods-DesktopBuddy.release.xcconfig"; sourceTree = "<group>"; };
+		CEFA6D297F0145E552E3AB65 /* Pods_DesktopBuddy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DesktopBuddy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +41,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				933EDCBB0C0605337FB66FBF /* Pods_DesktopBuddy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E7486192BA9508838B7437A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4E258DE9101B447F9195A00B /* Pods-DesktopBuddy.debug.xcconfig */,
+				C2B68AB2F9C6D1D26EBD561C /* Pods-DesktopBuddy.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		AEC2A395208111D5009F8F89 = {
 			isa = PBXGroup;
 			children = (
 				AEC2A3A0208111D5009F8F89 /* DesktopBuddy */,
 				AEC2A39F208111D5009F8F89 /* Products */,
+				1E7486192BA9508838B7437A /* Pods */,
+				B9F238E406B7685BDD89F4B8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +80,24 @@
 			children = (
 				AEC2A3A1208111D5009F8F89 /* AppDelegate.swift */,
 				AEC2A3A3208111D5009F8F89 /* ViewController.swift */,
+				AE062EBE208153620047D001 /* AlertViewHelper.swift */,
 				AEC2A3A5208111D5009F8F89 /* Main.storyboard */,
+				AEDFC06F20811B6600BAF4B3 /* Constants.swift */,
 				AEC2A3A8208111D5009F8F89 /* Assets.xcassets */,
 				AEC2A3AA208111D5009F8F89 /* LaunchScreen.storyboard */,
 				AEC2A3AD208111D5009F8F89 /* Info.plist */,
+				AEDFC0712081204A00BAF4B3 /* awsiot-identity.p12 */,
+				AE062EC0208521E40047D001 /* IoTManager.swift */,
 			);
 			path = DesktopBuddy;
+			sourceTree = "<group>";
+		};
+		B9F238E406B7685BDD89F4B8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CEFA6D297F0145E552E3AB65 /* Pods_DesktopBuddy.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +107,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AEC2A3B0208111D5009F8F89 /* Build configuration list for PBXNativeTarget "DesktopBuddy" */;
 			buildPhases = (
+				9933A0D21BEFAF706B8C8411 /* [CP] Check Pods Manifest.lock */,
 				AEC2A39A208111D5009F8F89 /* Sources */,
 				AEC2A39B208111D5009F8F89 /* Frameworks */,
 				AEC2A39C208111D5009F8F89 /* Resources */,
+				0C9D29A66C69C1EBF0F9DE28 /* [CP] Embed Pods Frameworks */,
+				76A2826928F4354309EFDA26 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -123,6 +162,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE062EBD2081457C0047D001 /* awsiot-identity.p12 in Resources */,
 				AEC2A3AC208111D5009F8F89 /* LaunchScreen.storyboard in Resources */,
 				AEC2A3A9208111D5009F8F89 /* Assets.xcassets in Resources */,
 				AEC2A3A7208111D5009F8F89 /* Main.storyboard in Resources */,
@@ -131,13 +171,108 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0C9D29A66C69C1EBF0F9DE28 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DesktopBuddy/Pods-DesktopBuddy-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AWSAutoScaling/AWSAutoScaling.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSCloudWatch/AWSCloudWatch.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSCognito/AWSCognito.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSCognitoIdentityProvider/AWSCognitoIdentityProvider.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSCognitoIdentityProviderASF/AWSCognitoIdentityProviderASF.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSCore/AWSCore.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSDynamoDB/AWSDynamoDB.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSEC2/AWSEC2.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSElasticLoadBalancing/AWSElasticLoadBalancing.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSIoT/AWSIoT.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSKinesis/AWSKinesis.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSLambda/AWSLambda.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSMachineLearning/AWSMachineLearning.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSMobileAnalytics/AWSMobileAnalytics.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSS3/AWSS3.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSSES/AWSSES.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSSNS/AWSSNS.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSSQS/AWSSQS.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSSimpleDB/AWSSimpleDB.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSAutoScaling.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCloudWatch.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCognito.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCognitoIdentityProvider.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCognitoIdentityProviderASF.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSDynamoDB.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSEC2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSElasticLoadBalancing.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSIoT.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSKinesis.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSLambda.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSMachineLearning.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSMobileAnalytics.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSS3.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSSES.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSSNS.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSSQS.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSSimpleDB.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DesktopBuddy/Pods-DesktopBuddy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		76A2826928F4354309EFDA26 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DesktopBuddy/Pods-DesktopBuddy-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9933A0D21BEFAF706B8C8411 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DesktopBuddy-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AEC2A39A208111D5009F8F89 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE062EC1208521E40047D001 /* IoTManager.swift in Sources */,
 				AEC2A3A4208111D5009F8F89 /* ViewController.swift in Sources */,
 				AEC2A3A2208111D5009F8F89 /* AppDelegate.swift in Sources */,
+				AEDFC07020811B6600BAF4B3 /* Constants.swift in Sources */,
+				AE062EBF208153620047D001 /* AlertViewHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +407,7 @@
 		};
 		AEC2A3B1208111D5009F8F89 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E258DE9101B447F9195A00B /* Pods-DesktopBuddy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +423,7 @@
 		};
 		AEC2A3B2208111D5009F8F89 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2B68AB2F9C6D1D26EBD561C /* Pods-DesktopBuddy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

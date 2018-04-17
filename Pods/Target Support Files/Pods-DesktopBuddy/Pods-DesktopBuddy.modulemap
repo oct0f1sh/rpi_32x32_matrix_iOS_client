@@ -1,0 +1,6 @@
+framework module Pods_DesktopBuddy {
+  umbrella header "Pods-DesktopBuddy-umbrella.h"
+
+  export *
+  module * { export * }
+}
